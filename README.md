@@ -1,5 +1,11 @@
 # `solidity-docgen`
 
+# OWN STUFF
+
+`npm link`
+
+`npm run build:watch`
+
 **Documentation generator for smart contract libraries.** Use the inline
 documentation in your Solidity code for generating websites or any sort of
 document.
