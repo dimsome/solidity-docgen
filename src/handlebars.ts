@@ -10,7 +10,8 @@ H.registerHelper("slug", slug);
 H.registerHelper("strip", function (options) {
   let str = options.fn(this);
   str = str.trim();
-  str = str.replace("\n", "");
+  str = str.replaceAll("\n", "");
+  str = str.replaceAll("\t", "");
   return new handlebars.SafeString(str);
 });
 
