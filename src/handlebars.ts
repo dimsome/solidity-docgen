@@ -11,7 +11,8 @@ H.registerHelper("strip", function (options) {
   let str = options.fn(this);
   str = str.trim();
   str = str.replaceAll("\n", "");
-  str = str.replaceAll("\t", "");
+  str = str.replaceAll("  ", "");
+  console.log("Hello");
   return new handlebars.SafeString(str);
 });
 
